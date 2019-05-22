@@ -1,9 +1,13 @@
-.circle{
+.circle {
     height: 300px;
     width: 300px;
     background-color: var(--text-color);
     border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
+
 .txtbox{
     margin: 4rem auto;
     background-color:var(--dark-color);

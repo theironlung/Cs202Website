@@ -1,16 +1,16 @@
-
-.menu{
+.menu {
     padding: 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background: transparent !important;
 }
-.menu li{
+
+.menu li {
     list-style: none;
     text-align: center;
 }
-.menu a{
+.menu a {
     color: var(--text-color) !important;
     text-decoration: none;
 }
