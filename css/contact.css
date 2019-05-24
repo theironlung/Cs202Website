@@ -1,0 +1,17 @@
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: var(--white-color);
+    background-clip: 1px solid #ced4da;
+    padding: 1px solid #ced4da;
+    border: 1px solid #ced4da;
+}
+
+.contactform{
+    width: 70%;
+    padding-bottom: 4em;
+}
