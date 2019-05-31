@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 6em;
     /* border-bottom: 4px solid var(--dark-color); */
 }
 

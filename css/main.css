@@ -27,3 +27,9 @@ body {
     text-align: center;
     padding: 2rem;
 }
+
+.button, .button:hover{
+    padding: 1rem 2rem;
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}

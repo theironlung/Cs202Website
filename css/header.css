@@ -28,6 +28,11 @@ header{
 
 }
 
+.hand img{
+    height: 140%;
+    width: auto;
+}
+
   
 /* Page content */
 /* .content {
@@ -46,3 +51,10 @@ header{
     padding-top: 102px;
 } */
 
+@media(max-width: 600px){
+
+    .circle {
+        height: 280px;
+        width: 280px;
+    }
+}

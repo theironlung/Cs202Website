@@ -13,7 +13,7 @@
 
 .contactform{
     width: 60%;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .contact{
@@ -24,6 +24,15 @@
     color: var(--text-color);
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex p{
+    padding: 3rem;
+}
+
 .btn{
     border: 2px solid var(--text-color);
     color: var(--text-color);
@@ -31,4 +40,14 @@
 
 .btn:hover{
     color: var(--dark-color);
+}
+
+@media(max-width: 900px){
+    .contactform{
+        width: 100%
+    }
+
+    .flex{
+        flex-direction: column-reverse;
+    }
 }
