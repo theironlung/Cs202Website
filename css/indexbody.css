@@ -1,16 +1,47 @@
-.circle {
-    height: 300px;
-    width: 300px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
 .txtbox{
-    margin: 4rem auto;
     background-color:var(--dark-color);
     color:var(--text-color);
-    padding: 1rem;
+    width: 100%;
+    padding: 5rem 10rem;
+}
+
+.welcome{
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome img{
+    height: 100%;
+    width: 50%;
+}
+
+.bigbox{
+    margin: 4rem 0.5rem 2rem 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 5px 8px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: var(--text-color);
+    padding: 3rem 0;
+}
+
+.hand img{
+    height: 140%;
+    width: auto;
+}
+
+@media(max-width: 900px){
+    .welcome{
+        margin: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .welcome img{
+        padding-top: 4rem;
+        height: auto;
+        width: 100%;
+    }
 }
