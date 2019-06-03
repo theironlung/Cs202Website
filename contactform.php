@@ -4,6 +4,7 @@ include('include/config.php');
 
 if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
   isset($_POST['message'])) {
+    echo "File accessed!";
     $db = get_PDO();
     $name = $_POST['name'];
     $phone = $_POST['phone'];
