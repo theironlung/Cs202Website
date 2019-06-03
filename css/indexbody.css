@@ -17,8 +17,12 @@
     width: 50%;
 }
 
+.welcome .txt{
+    padding: 0 1rem;
+}
+
 .bigbox{
-    margin: 4rem 0.5rem 2rem 0.5rem;
+    margin: 4rem 1rem 2rem 1rem;
     box-shadow: 2px 5px 8px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     background-color: var(--text-color);
     padding: 3rem 0;
@@ -26,27 +30,31 @@
 }
 
 .bigbox h3{
-    text-align: center;
     padding-bottom: 3rem;
 }
 
 .bigbox p{
-    padding-bottom: 1rem;
+    padding: 2rem 0 1rem;
 }
 
 .imgg{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 6rem 3rem 0;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
 }
 
 .imgg img{
     height: 50vh;
+    padding-bottom: 2rem;
 }
 
 .imgg ul{
     padding-top: 1rem;
+    text-align: justify;
+}
+
+.right{
     text-align: justify;
 }
 
@@ -72,7 +80,22 @@
     }
 
     .imgg{
-        flex-direction: column;
-        padding-bottom: 3rem; 
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem 3rem;
+    }
+
+    .right{
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px){
+    .txtbox{
+        font-size: 20px;
+    }
+
+    .imgg img{
+        width: 100%;
+        height: auto;
     }
 }

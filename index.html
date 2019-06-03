@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link href="node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
     <link rel="stylesheet" href="css/main.css">
@@ -24,13 +25,15 @@
                 <p>Graphic Designer</p>
             </div>
         </section>
-        <div class="hero">
+        <div class="hero" id="start">
             <div class="logo" id="mylogo">
                 Aidan Koenig
             </div>
             <nav>
+                <label class="label" for="toggle"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#start">Home</a></li>
                     <li><a href="portfolio.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -42,35 +45,35 @@
     <main>
         <section class="main-padding">
             <div class="welcome">
-                <div>
+                <div class="txt">
                     <h2>Welcome to my Portfolio!</h2>
                     <p>Take a look around, I'm sure you'll find something of interest.</p>
                 </div>
                 <img src="media/building.jpg" alt="building">
             </div>
             <div class="bigbox">
-                <h3>Services</h3>
                 <div class="imgg">
                     <img src="media/mouse.png" alt="illustration">
-
-                    <h5>What I can do for you:
-                        <ul>
-                            <li>Web Development</li>
-                            <li>Brand Creation</li>
-                            <li>Event Identity</li>
-                            <li>Graphic Design</li>
-                        </ul>
-                    </h5>
+                    <div class="right">
+                        <h3>Services</h3>
+                        <h5>What I can do for you:
+                            <ul>
+                                <li>Web Development</li>
+                                <li>Brand Creation</li>
+                                <li>Event Identity</li>
+                                <li>Graphic Design</li>
+                            </ul>
+                        </h5>
+                        <p>For work inquiries or questions</p>
+                        <a href="contact.php" class="button">Contact Me</a>
+                    </div>
                 </div>
-                <p>For work inquiries or questions</p>
-                <a href="contact.html" class="button">Contact Me</a>
             </div>
             <div class="txtbox">
                 <h3>"Do not go gentle into that good night.
                     Rage, rage against the dying of the light."</h3>
                 <p>- Dylan Thomas</p>
             </div>
-
         </section>
     </main>
 
@@ -80,6 +83,7 @@
 
     <!-- JavaScript -->
     <script src="js/jquery.js"></script>
+    <script src="js/ahrelax.js"></script>
     <!-- <script src="sticky.js"></script> -->
 </body>
 

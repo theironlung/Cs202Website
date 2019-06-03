@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
+    <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/main.css">
     <title>Aidan Koenig | Portfolio</title>
@@ -20,8 +20,10 @@
                 Aidan Koenig
             </div>
             <nav>
+                <label class="label" for="toggle"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#start">Home</a></li>
                     <li><a href="portfolio.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -74,7 +76,7 @@
                 <div class="text">
                     <h5>These frames are from a title sequence I animated for a book, Shadow of the Tourturer.</h5>
                     <p>Which can be viewed from <a href="https://vimeo.com/319639301">Here</a></p>
-                    
+
                 </div>
             </div>
         </section>
@@ -82,6 +84,8 @@
 
     <!-- JavaScript -->
     <script src="js/jquery.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/portfolioreveal.js"></script>
     <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
     <script src="js/fancybox.js"></script>
     <!-- <script src="sticky.js"></script> -->

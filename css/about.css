@@ -25,8 +25,31 @@
 
 .left{
     color: var(--text-color);
-    padding: 5rem;
+    padding: 3rem;
     grid-column: 1/3;
+}
+
+.aboutlower{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 4rem 0;
+    background-color: var(--alt-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem 0 0;
+}
+
+.right{
+    color: var(--text-color);
+    padding: 3rem 0;
+    grid-column: 2/3;
+    text-align: left;
+}
+
+.video{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 2rem;
+    margin: 0 2rem;
+    background-color: var(--text-color)
 }
 
 @media(max-width:750px){
@@ -40,8 +63,9 @@
         padding-bottom: 3rem;
     }
 
-    .about{
+    .about, .aboutlower{
         grid-template-columns: 1fr;
+        font-size: 15px;
     }
 
 }
