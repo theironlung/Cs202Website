@@ -1,3 +1,5 @@
+USE aidaaejf_portfoliocontact;
+
 DROP TABLE contact IF EXISTS;
 
 CREATE TABLE contact
