@@ -2,17 +2,26 @@
 
 include('include/config.php');
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
 if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
   isset($_POST['message'])) {
-    // rest of your code inside here
-}
+    $db = get_PDO();
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $query_string = "SELECT * FROM contact WHERE email = '$email'";
+    try {
+      $rows = $db->query($query_string);
+    }
+    catch(PDOException $ex) {
+      die("There has been a database error.");
+    }
 
-$sql = "SELECT * FROM contact WHERE email = '$email'";
+} else {
+  header("HTTP/1.1 400 Invalid Request");
+  header("Content-type: text/plain");
+  die("I need a valid email, phone, message, and name.");
+}
 
 $result = mysqli_query($con, $sql);
 
