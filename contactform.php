@@ -7,6 +7,11 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
+if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
+  isset($_POST['message'])) {
+    // rest of your code inside here
+}
+
 $sql = "SELECT * FROM contact WHERE email = '$email'";
 
 $result = mysqli_query($con, $sql);
@@ -19,7 +24,7 @@ if(($row['message']==$message) && ($row['email']==$email)){
         confirm('I have already recieved your message, Enter a New One.');
         window.location = "contact.php";
     </script>
-    
+
     <?php
 }
 
@@ -33,7 +38,7 @@ else{
                 confirm('Message Recieved. <?php echo $name ?>, Thank you!');
                 window.location = "contact.php";
             </script>
-        
+
         <?php
     }
     else{
@@ -44,6 +49,11 @@ else{
             </script>
         <?php
     }
+}
+
+function is_valid_mode($mode) {
+  $VALID_MODES = array();
+  return in_array($mode, $VALID_MODES);
 }
 
 ?>
