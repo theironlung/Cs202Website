@@ -25,7 +25,6 @@ if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
     catch(PDOException $ex) {
       die("There has been a database error.");
     }
-
 } else {
   header("HTTP/1.1 400 Invalid Request");
   header("Content-type: text/plain");
