@@ -1,10 +1,10 @@
 USE aidaaejf_portfoliocontact;
 
-DROP TABLE contact IF EXISTS;
+DROP TABLE IF EXISTS contact;
 
 CREATE TABLE contact
   (name    VARCHAR(50) NOT NULL PRIMARY KEY,
-   phone   INT,
+   phone   VARCHAR(10),
    email   VARCHAR(50),
    message TEXT);
 
