@@ -10,10 +10,10 @@ function get_PDO() {
   # Variables for connections to the database.
   # TODO: Replace with your server (e.g. MAMP) variables as shown in lecture on Friday.
   $host = "localhost";     # fill in with server name (e.g. localhost)
-  $port = "8889";      # fill in with a port if necessary (will be different mac/pc)
-  $user = "root";     # fill in with user name
-  $password = "root"; # fill in with password (will be different mac/pc)
-  $dbname = "";   # fill in with db name containing your SQL tables
+  $port = "3306";      # fill in with a port if necessary (will be different mac/pc)
+  $user = "aidaaejf_koenig";     # fill in with user name
+  $password = "shadowninja"; # fill in with password (will be different mac/pc)
+  $dbname = "aidaaejf_portfolioContact";   # fill in with db name containing your SQL tables
 
   # Make a data source string that will be used in creating the PDO object
   $ds = "mysql:host={$host}:{$port};dbname={$dbname};charset=utf8";
@@ -30,12 +30,12 @@ function get_PDO() {
   }
 }
 
-$con = mysqli_connect('localhost', 'aidaaefj_koenig', 'shadowninja');
+// $con = mysqli_connect('localhost', 'aidaaefj_koenig', 'shadowninja');
 
-mysqli_select_db($con, 'aidaaefj_portfolioContact');
+// mysqli_select_db($con, 'aidaaefj_portfolioContact');
 
-if(!$con){
-    die("Connection Error: ".mysqli_connect_error());
-}
+// if(!$con){
+//     die("Connection Error: ".mysqli_connect_error());
+// }
 
 ?>
