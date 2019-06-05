@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
+    <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/main.css">
     <title>Aidan Koenig | Portfolio</title>
@@ -15,13 +15,15 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="hero">
             <div class="logo" id="mylogo">
-                <img src="media/logo.png" alt="logo">
+                Aidan Koenig
             </div>
             <nav>
+                <label class="label" for="toggle"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#start">Home</a></li>
                     <li><a href="portfolio.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -35,38 +37,46 @@
             <h1>Portfolio</h1>
         </div>
         <section class="main-padding">
-            <div class="container">
-                <div class="">
-                    <div class="container-gallery">
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/P1040527.png">
-                                <img src="media/portfolio/P1040527.png" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/Crime.jpg">
-                                <img src="media/portfolio/Crime.jpg" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/P1040562.JPG">
-                                <img src="media/portfolio/P1040562.JPG" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/P1040574.JPG">
-                                <img src="media/portfolio/P1040574.JPG" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/P1060396.JPG">
-                                <img src="media/portfolio/P1060396.JPG" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/catch-22.png">
-                                <img src="media/portfolio/catch-22.png" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/mockup.png" title="Album Cover 1/2">
-                                <img src="media/portfolio/mockup.png" alt=""></a>
-                            <a class="fancybox" href="media/portfolio/threewiz-07.png" title="Album Cover 2/2"></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/seattle-01.png">
-                                <img src="media/portfolio/seattle-01.png" alt=""></a></div>
-                        <div class="item">
-                            <a class="fancybox" href="media/portfolio/title.PNG">
-                                <img src="media/portfolio/title.PNG" alt=""></a></div>
-                    </div>
+            <div class="container-gallery">
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/P1040527.png">
+                        <img src="media/small/kids.png" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/Crime.jpg">
+                        <img src="media/small/crime.png" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/P1040562.JPG">
+                        <img src="media/small/old.jpg" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/P1040574.JPG">
+                        <img src="media/small/car.png" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/P1060396.JPG">
+                        <img src="media/portfolio/P1060396.JPG" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/catch-22.png">
+                        <img src="media/small/catch.png" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/mockup.png" title="Album Cover 1/2">
+                        <img src="media/small/mock.png" alt=""></a>
+                    <a class="fancybox" href="media/portfolio/threewiz-07.png" title="Album Cover 2/2"></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/seattle-01.png">
+                        <img src="media/small/seattle.png" alt=""></a></div>
+                <div class="item">
+                    <a class="fancybox" href="media/portfolio/title.PNG">
+                        <img src="media/small/tit.png" alt=""></a></div>
+            </div>
+            <div class="lower">
+                <div class="screenshot">
+                    <img src="media/portfolio/sui.PNG" alt="">
+                    <img src="media/portfolio/based.PNG" alt="">
+
+                </div>
+                <div class="text">
+                    <h5>These frames are from a title sequence I animated for a book, Shadow of the Tourturer.</h5>
+                    <p>Which can be viewed from <a href="https://vimeo.com/319639301">Here</a></p>
+
                 </div>
             </div>
         </section>
@@ -74,9 +84,15 @@
 
     <!-- JavaScript -->
     <script src="js/jquery.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/portfolioreveal.js"></script>
     <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
     <script src="js/fancybox.js"></script>
     <!-- <script src="sticky.js"></script> -->
 </body>
+
+<footer>
+    <div class="copyright">Copyright 2019 All rights reserved | Aidan Koenig</div>
+</footer>
 
 </html>

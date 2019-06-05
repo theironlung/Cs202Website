@@ -3,6 +3,8 @@
 @import "nav.css";
 @import "indexbody.css";
 @import "portfolio.css";
+@import "about.css";
+@import "contact.css";
 
 :root{
     --text-color: #fff;
@@ -14,8 +16,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
 }
+
 .main-padding{
-    padding: 2rem 7rem;
+    margin-top: 7rem;
+}
+
+.copyright{
+    text-align: center;
+    padding: 2rem;
+}
+
+.button, .button:hover{
+    padding: 1rem 2rem;
+    background-color: var(--dark-color);
+    color: var(--text-color);
 }
