@@ -4,13 +4,11 @@ include('include/config.php');
 
 if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
   isset($_POST['message'])) {
-    echo "File accessed!";
     $db = get_PDO();
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    //$query_string = "SELECT * FROM contact WHERE email = '$email'";
     try {
       $query_string = "INSERT INTO contact(name, phone, email, message) values(:name, :phone, :email, :message);";
       $stmt = $db->prepare($query_string);
@@ -22,6 +20,9 @@ if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
                "phone" => $phone,
                "message" => $message);
       $stmt->execute($params);
+      $success = array("success" => "Successfully inserted!");
+      header("Content-type: application/json");
+      print(json_encode($success));
     }
     catch(PDOException $ex) {
       die("There has been a database error.");

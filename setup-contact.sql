@@ -1,4 +1,4 @@
-USE aidaaejf_portfolioContact;
+USE tits;
 
 DROP TABLE IF EXISTS contact;
 
