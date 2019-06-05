@@ -12,7 +12,7 @@ function get_PDO() {
   $host = "localhost";     # fill in with server name (e.g. localhost)
   $port = "3306";      # fill in with a port if necessary (will be different mac/pc)
   $user = "root";     # fill in with user name
-  $password = ""; # fill in with password (will be different mac/pc)
+  $password = "root"; # fill in with password (will be different mac/pc)
   $dbname = "tits";   # fill in with db name containing your SQL tables
 
   # Make a data source string that will be used in creating the PDO object
