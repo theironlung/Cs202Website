@@ -1,4 +1,4 @@
-USE aidaaejf_portfoliocontact;
+USE aidaaejf_portfolioContact;
 
 DROP TABLE IF EXISTS contact;
 

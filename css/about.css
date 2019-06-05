@@ -52,6 +52,16 @@
     background-color: var(--text-color)
 }
 
+.video p{
+    font-size: 15px;
+    padding: 1rem;
+}
+@media(max-width: 1000px){
+    .titabout{
+        padding: 8rem 4rem;
+    }
+}
+
 @media(max-width:750px){
 
     .titabout{
@@ -66,6 +76,10 @@
     .about, .aboutlower{
         grid-template-columns: 1fr;
         font-size: 15px;
+    }
+
+    .right{
+        padding: 3rem 0 2rem 3rem;
     }
 
 }

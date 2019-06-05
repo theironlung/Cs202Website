@@ -5,6 +5,7 @@
 @import "portfolio.css";
 @import "about.css";
 @import "contact.css";
+@import "titleroll.css";
 
 :root{
     --text-color: #fff;
@@ -12,6 +13,8 @@
     --alt-color: #DE5F5A;
     --dark-color: #414141;
     --bg-color: #fafafa;
+    /* titleroll color */
+    --shadow: #533d4a;
 }
 
 body {

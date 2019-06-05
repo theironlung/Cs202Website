@@ -33,30 +33,30 @@ if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) &&
 }
 //
 // $result = mysqli_query($con, $sql);
-//
+
 // $row = mysqli_fetch_array($result);
-//
+
 // if(($row['message']==$message) && ($row['email']==$email)){
 //     ?>
 //     <script>
 //         confirm('I have already recieved your message, Enter a New One.');
 //         window.location = "contact.php";
 //     </script>
-//
+
 //     <?php
 // }
-//
+
 // else{
 //     $data = "INSERT INTO contact(name, phone, email,
 //     message) values('$name', '$phone', '$email', '$message')";
-//
+
 //     if(mysqli_query($con, $data)){
 //         ?>
 //             <script>
-//                 confirm('Message Recieved. <?php echo $name ?>, Thank you!');
+                // confirm('Message Recieved. <?php echo $name ?>, Thank you!');
 //                 window.location = "contact.php";
 //             </script>
-//
+
 //         <?php
 //     }
 //     else{

@@ -14,7 +14,7 @@ header{
 
 .bannerImg{  
     /* background-image: url("../media/scann.jpg"); */
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-size: cover; 
     text-align: center;
